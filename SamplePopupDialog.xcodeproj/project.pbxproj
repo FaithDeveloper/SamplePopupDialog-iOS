@@ -12,6 +12,12 @@
 		027A3C4B20412B48005DA74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A3C4920412B48005DA74E /* Main.storyboard */; };
 		027A3C4D20412B48005DA74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027A3C4C20412B48005DA74E /* Assets.xcassets */; };
 		027A3C5020412B48005DA74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A3C4E20412B48005DA74E /* LaunchScreen.storyboard */; };
+		027A3C5920412C96005DA74E /* OneButtonDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A3C5820412C96005DA74E /* OneButtonDialog.swift */; };
+		027A3C5B20412CA2005DA74E /* TwoButtonDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A3C5A20412CA2005DA74E /* TwoButtonDialog.swift */; };
+		027A3C5F20412CE3005DA74E /* UIDeviceExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A3C5E20412CE3005DA74E /* UIDeviceExtention.swift */; };
+		027A3C6120412CF3005DA74E /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A3C6020412CF3005DA74E /* UIViewControllerExtention.swift */; };
+		027A3C6420412DBE005DA74E /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027A3C6320412DBE005DA74E /* Popup.storyboard */; };
+		027A3C6620413015005DA74E /* BaseDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A3C6520413015005DA74E /* BaseDialogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		027A3C4C20412B48005DA74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027A3C4F20412B48005DA74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027A3C5120412B48005DA74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027A3C5820412C96005DA74E /* OneButtonDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneButtonDialog.swift; sourceTree = "<group>"; };
+		027A3C5A20412CA2005DA74E /* TwoButtonDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonDialog.swift; sourceTree = "<group>"; };
+		027A3C5E20412CE3005DA74E /* UIDeviceExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtention.swift; sourceTree = "<group>"; };
+		027A3C6020412CF3005DA74E /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		027A3C6320412DBE005DA74E /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		027A3C6520413015005DA74E /* BaseDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDialogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		027A3C4420412B48005DA74E /* SamplePopupDialog */ = {
 			isa = PBXGroup;
 			children = (
+				027A3C6820413323005DA74E /* Main */,
+				027A3C67204132BC005DA74E /* Storyboard */,
+				027A3C6220412D5B005DA74E /* Extention */,
+				027A3C5720412C28005DA74E /* Popup */,
 				027A3C4520412B48005DA74E /* AppDelegate.swift */,
-				027A3C4720412B48005DA74E /* ViewController.swift */,
-				027A3C4920412B48005DA74E /* Main.storyboard */,
 				027A3C4C20412B48005DA74E /* Assets.xcassets */,
 				027A3C4E20412B48005DA74E /* LaunchScreen.storyboard */,
 				027A3C5120412B48005DA74E /* Info.plist */,
 			);
 			path = SamplePopupDialog;
+			sourceTree = "<group>";
+		};
+		027A3C5720412C28005DA74E /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				027A3C5820412C96005DA74E /* OneButtonDialog.swift */,
+				027A3C5A20412CA2005DA74E /* TwoButtonDialog.swift */,
+				027A3C6520413015005DA74E /* BaseDialogViewController.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		027A3C6220412D5B005DA74E /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				027A3C5E20412CE3005DA74E /* UIDeviceExtention.swift */,
+				027A3C6020412CF3005DA74E /* UIViewControllerExtention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		027A3C67204132BC005DA74E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				027A3C4920412B48005DA74E /* Main.storyboard */,
+				027A3C6320412DBE005DA74E /* Popup.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		027A3C6820413323005DA74E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				027A3C4720412B48005DA74E /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +176,7 @@
 				027A3C5020412B48005DA74E /* LaunchScreen.storyboard in Resources */,
 				027A3C4D20412B48005DA74E /* Assets.xcassets in Resources */,
 				027A3C4B20412B48005DA74E /* Main.storyboard in Resources */,
+				027A3C6420412DBE005DA74E /* Popup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +189,11 @@
 			files = (
 				027A3C4820412B48005DA74E /* ViewController.swift in Sources */,
 				027A3C4620412B48005DA74E /* AppDelegate.swift in Sources */,
+				027A3C5B20412CA2005DA74E /* TwoButtonDialog.swift in Sources */,
+				027A3C5F20412CE3005DA74E /* UIDeviceExtention.swift in Sources */,
+				027A3C5920412C96005DA74E /* OneButtonDialog.swift in Sources */,
+				027A3C6620413015005DA74E /* BaseDialogViewController.swift in Sources */,
+				027A3C6120412CF3005DA74E /* UIViewControllerExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6R7KP3R;
 				INFOPLIST_FILE = SamplePopupDialog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kcs.SamplePopupDialog;
@@ -289,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32Y6R7KP3R;
 				INFOPLIST_FILE = SamplePopupDialog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kcs.SamplePopupDialog;
