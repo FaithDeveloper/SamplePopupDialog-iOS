@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func actionOneButtonDialog(_ sender: Any) {
         let dialog = getViewControllerFromStoryBoard(storyboardName: "Popup", targetControllerName: "OneButtonDialog", targetController: OneButtonDialog())
+            // Listener 등록
             dialog.setOnClickListener {
                 print("One Button Dialog : OK Click")
             }
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func actionTwoButtonDialog(_ sender: Any) {
         let dialog = getViewControllerFromStoryBoard(storyboardName: "Popup", targetControllerName: "TwoButtonDialog", targetController: TwoButtonDialog())
+        // Listener 등록
         dialog.setOnClickListener { (type) in
             switch type {
             case .confirm:
